@@ -3,4 +3,5 @@ venv/
 .DS_Store
 .idea/
 resources/
-main2.py
+input.txt
+output.txt

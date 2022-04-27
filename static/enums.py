@@ -15,7 +15,7 @@ class HidingText(Enum):
 class Keywords(Enum):
     COMPANY_PRE_KEYWORDS = ['بنیاد', 'نهاد', 'شرکت', 'سازمان', 'اداره', 'موسسه']
     GENDERS_KEYWORDS = ['همجنس‌گرا', 'دوحنس‌گرا', 'تراجنس‌گرا', 'پسر', 'مرد', 'دختر', 'زن']
-    NATIONAL_NUMBER_PRE_KEYWORDS = ['شماره‌ملی', 'شماره‌شناسنامه', 'کد‌ملی']
+    NATIONAL_NUMBER_PRE_KEYWORDS = ['شماره‌ملی', 'شماره‌شناسنامه', 'کد‌‌ملی']
     DATE_PRE_KEYWORDS = ['ولادت', 'مرگ', 'تولد', 'متولد']
     DATE_POST_KEYWORDS = ['به دنیا', 'چشم به جهان گشود', 'مرد', 'چشم از دنیا بست', 'زاده', 'متولد شد']
 
@@ -33,6 +33,8 @@ class Path(Enum):
     FIRST_NAME_PATH_WRITE = '../data/first_names.json'
     LAST_NAME_PATH_WRITE = '../data/last_names.json'
     COMPANIES_PATH_WRITE = '../data/companies.json'
+    INPUT_FILE = "input.txt"
+    OUTPUT_FILE = "output.txt"
 
 
 class CrawlUrl(Enum):

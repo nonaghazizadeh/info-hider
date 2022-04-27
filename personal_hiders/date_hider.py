@@ -29,7 +29,6 @@ class DateHider:
         return ans + text[last_span:]
 
     def extract_day_spans(self, text, spans):
-        print(spans)
         final_spans = []
         for span in spans:
             if self.find_keyword(text[max(0, span[0] - 25):span[0]], self.pre_keywords) or self.find_keyword(
