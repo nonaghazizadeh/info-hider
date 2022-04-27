@@ -9,12 +9,12 @@ from personal_hiders.gender_hider import GenderHider
 from static.enums import Path
 from hazm import *
 
-
 file = open(Path.INPUT_FILE.value, 'r', encoding="utf-8")
 text = file.read()
 file.close()
 
 text = EmailHider().hide_emails(text)
+text = GenderHider().hide_gender(text)
 normalizer = Normalizer()
 text = normalizer.normalize(text)
 text = CompanyHider().hide_company_name(text)
