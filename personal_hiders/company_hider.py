@@ -1,11 +1,11 @@
 import json
-from static.enums import Path, HidingText
+from static.enums import Path, HidingText,Keywords
 
 
 class CompanyHider:
     def __init__(self):
-        self.companies = self.open_read_files(Path.COMPANIES_PATH.value)
-        self.pre_keywords = ['شرکت', 'سازمان', 'موسسه']
+        self.companies = self.open_read_files(Path.COMPANIES_PATH_READ.value)
+        self.pre_keywords = Keywords.COMPANY_PRE_KEYWORDS.value
 
     @staticmethod
     def open_read_files(path):

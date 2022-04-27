@@ -51,4 +51,4 @@ def write_to_file(companies_names_list, path):
 normalized_companies_names = normalize_companies_names(
     iranian_companies_crawler(CrawlUrl.IRANIAN_FIRST_COMPANY_URL.value) + iranian_companies_crawler(
         CrawlUrl.IRANIAN_SECOND_COMPANY_URL.value) + other_companies_crawler(CrawlUrl.OTHERS_COMPANY_URL.value))
-write_to_file(normalized_companies_names, Path.COMPANIES_PATH.value)
+write_to_file(normalized_companies_names, Path.COMPANIES_PATH_WRITE.value)

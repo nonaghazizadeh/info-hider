@@ -1,5 +1,5 @@
 from parstdex import Parstdex
-from static.enums import HidingText
+from static.enums import HidingText,Keywords
 
 
 class DateHider:
@@ -7,8 +7,8 @@ class DateHider:
 
     def __init__(self):
         self.model = Parstdex()
-        self.pre_keywords = ['ولادت', 'مرگ', 'تولد', 'متولد']
-        self.post_keywords = ['به دنیا', 'چشم به جهان گشود', 'مرد', 'چشم از دنیا بست', 'زاده', 'متولد شد']
+        self.pre_keywords = Keywords.DATE_PRE_KEYWORDS.value
+        self.post_keywords = Keywords.DATE_POST_KEYWORDS.value
 
     @staticmethod
     def find_keyword(text, keywords):

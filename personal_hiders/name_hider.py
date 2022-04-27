@@ -5,8 +5,8 @@ from static.enums import HidingText, Path
 
 class NameHider:
     def __init__(self):
-        self.last_names = self.convert_list_to_regex(self.open_read_files(Path.LAST_NAME_PATH.value))
-        self.first_names = self.convert_list_to_regex(self.open_read_files(Path.FIRST_NAME_PATH.value))
+        self.last_names = self.convert_list_to_regex(self.open_read_files(Path.LAST_NAME_PATH_READ.value))
+        self.first_names = self.convert_list_to_regex(self.open_read_files(Path.FIRST_NAME_PATH_READ.value))
         self.name_regex = f"(^|\W)(((({self.first_names})(\W+))+({self.last_names}))|({self.last_names})|({self.first_names}))($|\W)"
 
     @staticmethod

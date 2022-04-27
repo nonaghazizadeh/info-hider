@@ -54,5 +54,5 @@ def write_to_file(names_list, path):
     file.close()
 
 
-write_to_file(normalize_names(first_name_crawler(CrawlUrl.FIRST_NAME_URL.value)), Path.FIRST_NAME_PATH.value)
-write_to_file(normalize_names(last_name_crawler(CrawlUrl.LAST_NAME_URL.value)), Path.LAST_NAME_PATH.value)
+write_to_file(normalize_names(first_name_crawler(CrawlUrl.FIRST_NAME_URL.value)), Path.FIRST_NAME_PATH_WRITE.value)
+write_to_file(normalize_names(last_name_crawler(CrawlUrl.LAST_NAME_URL.value)), Path.LAST_NAME_PATH_WRITE.value)
