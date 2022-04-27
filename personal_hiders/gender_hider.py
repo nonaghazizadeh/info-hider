@@ -7,9 +7,10 @@ class GenderHider:
 
     def check_gender(self, inp):
         for gender in self.genders:
-            for word in inp.split(" "):
-                if word == gender:
-                    return True, gender
+            if inp is not None:
+                for word in inp.split(" "):
+                    if word == gender:
+                        return True, gender
         return False, ''
 
     def hide_gender(self, text):

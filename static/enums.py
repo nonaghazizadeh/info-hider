@@ -18,6 +18,8 @@ class Keywords(Enum):
     NATIONAL_NUMBER_PRE_KEYWORDS = ['شماره‌ملی', 'شماره‌شناسنامه', 'کد‌‌ملی']
     DATE_PRE_KEYWORDS = ['ولادت', 'مرگ', 'تولد', 'متولد']
     DATE_POST_KEYWORDS = ['به دنیا', 'چشم به جهان گشود', 'مرد', 'چشم از دنیا بست', 'زاده', 'متولد شد']
+    PHONE_NUMBER_PRE_KEYWORDS = ['شماره منزل', 'شماره همراه', 'تلفن منزل', 'تلفن همراه', 'تلفن', 'موبایل',
+                                 'شماره موبایل']
 
 
 class Regex(Enum):

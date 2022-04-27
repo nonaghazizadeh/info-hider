@@ -23,7 +23,6 @@ text = AddressHider().hide_address(text)
 text = NameHider().hide_person_name(text)
 text = NationalNumberHider().hide_national_code(text)
 text = PhoneNumberHider().hide_phones(text)
-text = GenderHider().hide_gender(text)
 
 with open(Path.OUTPUT_FILE.value, 'w', encoding="utf-8") as file:
     file.write(text)
